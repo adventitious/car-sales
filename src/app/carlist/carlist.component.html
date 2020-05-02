@@ -1,4 +1,4 @@
-<button (click)= "show = !show">{{show ? 'Hide' : 'Add a Car'}}</button>
+<button class="btn btn-dark" (click)= "show = !show">{{show ? 'Hide' : 'Add a Car'}}</button>
 
 <div *ngIf="show">
     <form>
@@ -14,7 +14,7 @@
         <label>ImageURL</label>
         <input type="text" name="imageURL" placeholder="Enter Link to Image" #imageURL>
 
-        <button type="submit" (click)="addTheCar(make.value, 
+        <button type="submit" class="btn btn-dark" (click)="addTheCar(make.value, 
                   model.value, year.value, imageURL.value)">Add the Car</button>
     </form>
 </div>

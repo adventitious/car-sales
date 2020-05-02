@@ -3,6 +3,7 @@ export interface ICar {
     model: string;
     year: string;
     imageURL: string;
+    id: string;
 
 }
 export class Car implements ICar{
@@ -10,10 +11,10 @@ export class Car implements ICar{
     model: string;
     year: string;
     imageURL: string;
+    id: string;
 
-    constructor( make: string,  model: string,    year: string,    imageURL: string )
+    constructor( make: string,  model: string,    year: string,    imageURL: string  )
     {
-        console.log( "hi 1 : " + make + " ok");
         this.make = make;
         this.model = model;
         this.year = year;
